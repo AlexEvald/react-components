@@ -9,11 +9,12 @@ const Navigation = () => {
     return (
         <Fragment>
             <div className={'navigation'}>
-                <Link className={'logo-container'} to={'/'} >
-                    <CrwnLogo className={'logo'} />
+                <Link className={'logo-container'} to={'/'}>
+                    <CrwnLogo className={'logo'}/>
                 </Link>
             </div>
-            <Outlet/>  {/* Outlet this replaces the located component from the nested Router elements*/}
+            <div className="separator"></div>
+            <Outlet/> {/* Outlet this replaces the located component from the nested Router elements*/}
         </Fragment>
     )
 }

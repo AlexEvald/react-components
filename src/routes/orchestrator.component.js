@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom";
 import {useEffect} from "react";
+import ComponentFirst from "./components/component-first";
 
 
 const OrchestratorComponent = () => {
@@ -15,7 +16,7 @@ const OrchestratorComponent = () => {
     const renderCategoryContent = () => {
         switch (category) {
             case 'component1':
-                return <div>Category one</div>;
+                return <ComponentFirst/>
             case 'component2':
                 return <div>Category two</div>;
             default:
