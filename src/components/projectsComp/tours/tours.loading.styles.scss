@@ -1,0 +1,16 @@
+.loading{
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid grey;
+  border-radius: 50%;
+  margin: 0 auto;
+  border-top-color: greenyellow;
+  animation: spinner 0.3s linear infinite;
+
+}
+
+@keyframes spinner {
+  to{
+    transform: rotate(360deg);
+  }
+}

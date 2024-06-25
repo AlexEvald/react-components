@@ -31,6 +31,12 @@ const categories = [
         "title": "component #5",
         "imageUrl": "https://i.ibb.co/R70vBrQ/men.png",
         "route" : "comp/component5"
+    },
+    {
+        "id": 6,
+        "title": "Tours",
+        "imageUrl": "",
+        "route" : "comp/tours"
     }
 ]
 
