@@ -2,7 +2,6 @@ import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Navigation from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
-import OrchestratorComponent from "./routes/orchestrator.component";
 import HigherComponent from "./routes/higher.component";
 
 function App() {
