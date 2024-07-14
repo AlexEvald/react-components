@@ -35,17 +35,20 @@ const ToursApp = () => {
     }
 
     const render= () => {
-        return isLoading ? <Loading/> : <Tours tours={tours} removeTour={removeTour}/>
+        return isLoading ? <Loading/> :
+            <main className={'tours-container'}>
+                <Tours tours={tours} removeTour={removeTour}/>
+            </main>
     }
 
-    if(isLoading){
-       return <main>
+    if (isLoading) {
+        return <main className={'tours-container'}>
             <Loading/>
         </main>
     }
 
     if(tours.length === 0){
-        return <main>
+        return <main className={'tours-container'}>
             <div className="title">
                 <h2>no tours left</h2>
                 <button className={'btn'} style= {{marginTop:'2rem'}} onClick={() => fetchTours()}> refresh </button>
