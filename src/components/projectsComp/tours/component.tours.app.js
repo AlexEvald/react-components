@@ -29,8 +29,13 @@ const ToursApp = () => {
 
     }
 
+    const removeTour = (id) => {
+        const newTours = tours.filter((tour) => (tour.id !== id));
+        setTours(newTours);
+    }
+
     const render= () => {
-        return isLoading ? <Loading/> : <Tours tours={tours} />
+        return isLoading ? <Loading/> : <Tours tours={tours} removeTour={removeTour}/>
     }
 
 

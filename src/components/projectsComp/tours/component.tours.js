@@ -2,7 +2,7 @@ import Tour from "./component.tour";
 
 
 const Tours = (props) => {
-    const { tours } = props;
+    const { tours, removeTour } = props;
    return (
 
        <section>
@@ -13,7 +13,7 @@ const Tours = (props) => {
 
            <div>
                {tours.map(tour => {
-                   return <Tour key = {tour.id}  tour={tour}/>
+                   return <Tour key = {tour.id}  tour={tour} removeTour={removeTour}/>
                })}
            </div>
        </section>
