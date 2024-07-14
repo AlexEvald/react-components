@@ -2,6 +2,7 @@ import {useParams} from "react-router-dom";
 import {useEffect} from "react";
 import ComponentFirst from "./components/component-first";
 import ToursApp from "../components/projectsComp/tours/component.tours.app";
+import Reviews from "../components/projectsComp/reviews/component.reviews.app";
 
 
 const OrchestratorComponent = () => {
@@ -20,6 +21,8 @@ const OrchestratorComponent = () => {
                 return <ComponentFirst/>
             case 'tours':
                 return <ToursApp/>;
+            case 'reviews':
+                return <Reviews/>
             default:
                 return <div>Category default</div>;
         }

@@ -1,4 +1,4 @@
-import './tours.loading.styles.scss'
+import './tours.styles.scss'
 
 const Loading = () =>{
 

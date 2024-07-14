@@ -68,3 +68,39 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# General for All Projects
+
+## React Icons Library
+
+Here I have the link to the icons library I am using: [React Icons](https://react-icons.github.io/react-icons/)
+
+### Installation
+
+To install it, use the following command:
+
+```bash
+npm install react-icons --save
+```
+
+Usage
+To use it, import the desired icon like this:
+import { FaBeer } from "react-icons/fa";
+Customization
+If you want to change the size or apply other styles, you can pass a class name to the icon like so:
+
+<FaBeer className={'beer'} />
+And in your CSS file:
+
+.beer {
+  font-size: 9.5rem;
+}
+to install it here is the way to : npm install react-icons --save
+to use it , it should go like this :
+import { FaBeer } from "react-icons/fa";
+
+then if you want change the size or do something else you can pass class name to it like so :
+<FaBeer className={'beer'}/>
+.beer{
+font-size: 9.5rem;
+}
