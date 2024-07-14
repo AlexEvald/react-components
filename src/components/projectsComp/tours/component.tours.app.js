@@ -51,6 +51,7 @@ const ToursApp = () => {
         return <main className={'tours-container'}>
             <div className="title">
                 <h2>no tours left</h2>
+                <div className={'underline'}></div>
                 <button className={'btn'} style= {{marginTop:'2rem'}} onClick={() => fetchTours()}> refresh </button>
             </div>
         </main>;

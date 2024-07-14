@@ -73,6 +73,7 @@
   margin: 2rem 0;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
+  position: relative;
 }
 .single-tour:hover {
   box-shadow: var(--dark-shadow);
@@ -103,6 +104,9 @@
   padding-left: 0.25rem;
 }
 .tour-price {
+  position: absolute;
+  top:0px;
+  right: 0px;
   color: var(--clr-primary-5);
   background: var(--clr-primary-10);
   padding: 0.25rem 0.5rem;
@@ -165,13 +169,6 @@ main {
   text-align: center;
   margin-bottom: 4rem;
 }
-.underline {
-  width: 6rem;
-  height: 0.25rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .single-tour {
   background: var(--clr-white);
@@ -201,6 +198,11 @@ main {
 }
 .tour-info h4 {
   margin-bottom: 0;
+}
+
+.tour-info p {
+  margin-left: 0.45rem;
+  margin-right: 0.45rem;
 }
 .single-tour button {
   background: transparent;
@@ -233,4 +235,13 @@ main {
   border-radius: var(--radius);
   cursor: pointer;
 
+}
+
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
 }
