@@ -19,11 +19,19 @@ const Reviews = () => {
         return number;
     }
 
+    const checkNextNumberBetter = (number) => {
+        return number % people.length;
+    }
+
+    const checkPrevNumberBetter = (number) => {
+        return (number + people.length) % people.length;
+    }
 
     const nextPerson = () => {
         setIndex((currentIndex) => {
                 const newIndex = currentIndex + 1;
-                return checknumber(newIndex);
+                // const newIndex = (currentIndex +1) % people.length;
+                return checkNextNumberBetter(newIndex);
             }
         );
     }
@@ -31,7 +39,8 @@ const Reviews = () => {
     const prevPerson = () => {
         setIndex((currentIndex) => {
                 const newIndex = currentIndex - 1;
-                return checknumber(newIndex);
+            // const newIndex = (currentIndex -1) +  people.length % people.length;
+            return checkPrevNumberBetter(newIndex);
             }
         );
     }
