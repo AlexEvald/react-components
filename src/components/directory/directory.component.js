@@ -2,6 +2,7 @@ import './directory.styles.scss';
 import DirectoryItem from "../directory-item/directory-item-component";
 
 const categories = [
+    //BOOM Master
     {
         "id": 1,
         "title": "component #1",
