@@ -2,7 +2,6 @@ import './directory.styles.scss';
 import DirectoryItem from "../directory-item/directory-item-component";
 
 const categories = [
-    //BOOM Master
     {
         "id": 1,
         "title": "component #1",
@@ -35,11 +34,10 @@ const categories = [
     },
     {
         "id": 6,
-        "title": "Tours!",
+        "title": "Tours",
         "imageUrl": "",
         "route" : "comp/tours"
     }
-    // for test branch
 ]
 
 const Directory = () => {
