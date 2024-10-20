@@ -34,7 +34,7 @@ const categories = [
     },
     {
         "id": 6,
-        "title": "Tours",
+        "title": "Tours!",
         "imageUrl": "",
         "route" : "comp/tours"
     }
