@@ -14,8 +14,6 @@ const OrchestratorComponent = () => {
             console.log(category)
     },[]);
 
-
-
     const renderCategoryContent = () => {
         switch (category) {
             case 'component1':
