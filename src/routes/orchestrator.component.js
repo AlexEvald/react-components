@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import ComponentFirst from "./components/component-first";
 import ToursApp from "../components/projects-components/tours/component.tours.app";
 import Reviews from "../components/projects-components/reviews/component.reviews.app";
+import QuestionsApp from "../components/projects-components/questions/component.questions.app";
 
 
 const OrchestratorComponent = () => {
@@ -23,6 +24,8 @@ const OrchestratorComponent = () => {
                 return <ToursApp/>;
             case 'reviews':
                 return <Reviews/>
+            case 'questions':
+                return <QuestionsApp/>;
             default:
                 return <div>Category default</div>;
         }

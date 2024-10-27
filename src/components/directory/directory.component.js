@@ -22,9 +22,9 @@ const categories = [
     },
     {
         "id": 4,
-        "title": "component #4",
-        "imageUrl": "https://i.ibb.co/GCCdy8t/womens.png",
-        "route" : "comp/component4"
+        "title": "Questions",
+        "imageUrl": "",
+        "route" : "comp/questions"
     },
     {
         "id": 5,
