@@ -5,7 +5,7 @@ import './reviews.styles.scss';
 
 
 const Reviews = () => {
-
+//
     const [index, setIndex] = useState(0);
     const {name, job, image, text} = people[index];
 
